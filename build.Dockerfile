@@ -14,7 +14,7 @@ RUN curl -L https://github.com/Kitware/CMake/releases/download/v${CMAKE}/cmake-$
     SUM=$(sha256sum cmake-${CMAKE}.tar.gz | cut -d ' ' -f 1) && \
     [ ${SUM} = ${CMAKE_CHECKSUM} ] && \
     tar xfz cmake-${CMAKE}.tar.gz > /dev/null && \  
-    cd cmake-3.15.5 && \
+    cd cmake-${CMAKE} && \
     echo "cmake bootstrap" && \
     ./bootstrap > /dev/null && \
     echo "cmake make" && \
