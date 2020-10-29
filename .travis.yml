@@ -1,6 +1,5 @@
 language: shell
 os: linux
-arch: arm64-graviton2
 dist: xenial
 sudo: required
 services:
